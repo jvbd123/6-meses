@@ -8,16 +8,19 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap');
 
     body {
-        font-family: 'Poppins', sans-serif;
-        background: linear-gradient(135deg, #a06bff, #c17cff, #e5b3fe);
-        color: #000;
-        text-align: center;
-        padding: 30px 20px;
-        margin: 0;
-        overflow: hidden;
-        position: relative;
-        animation: brilhoFundo 10s ease-in-out infinite alternate;
-    }
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a06bff, #c17cff, #e5b3fe);
+    color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    animation: brilhoFundo 10s ease-in-out infinite alternate;
+    overflow-x: hidden; /* somente horizontal escondida */
+    overflow-y: auto; /* agora o scroll vertical funciona */
+}
+
 
     @keyframes brilhoFundo {
         0% { filter: brightness(1); }
