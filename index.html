@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 Meses de Amor 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilo adicional para o calendário */
+    .calendario {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+      margin-top: 25px;
+    }
+
+    .dia {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .mes-botao {
+      grid-column: span 7;
+      background: linear-gradient(135deg, #ff8fab, #ff4f81);
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+      margin-top: 5px;
+    }
+
+    .mes-botao:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff4f81, #ff8fab);
+    }
+
+    .calendario-header {
+      color: #e75480;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 500px) {
+      .calendario {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .mes-botao {
+        grid-column: span 4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💘 Nossos 6 Meses de Amor 💘</h1>
+    <p class="sub">Cada mês foi um pedacinho da nossa história 💫<br> Clique no mês para reviver os momentos!</p>
+
+    <!-- CALENDÁRIO VISUAL -->
+    <div class="calendario">
+
+      <div class="calendario-header">Abril</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('abril.html')">🌷 Ver Abril</div>
+
+      <div class="calendario-header">Maio</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('maio.html')">🌼 Ver Maio</div>
+
+      <div class="calendario-header">Junho</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('junho.html')">🌻 Ver Junho</div>
+
+      <div class="calendario-header">Julho</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('julho.html')">🌞 Ver Julho</div>
+
+      <div class="calendario-header">Agosto</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('agosto.html')">🍂 Ver Agosto</div>
+
+      <div class="calendario-header">Setembro</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('setembro.html')">🌹 Ver Setembro</div>
+
+      <div class="calendario-header">Outubro</div>
+      <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div><div class="dia">4</div>
+      <div class="dia">5</div><div class="dia">6</div><div class="dia">7</div>
+      <div class="mes-botao" onclick="abrirMes('outubro.html')">🎃 Ver Outubro</div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
